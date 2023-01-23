@@ -1,0 +1,45 @@
+@use 'commons' as c;
+
+.historia {
+    color: c.$fontcolor;
+    padding: 40px;
+    font-family: c.$font;
+    text-shadow: 1px 1px 5px black, 3px 3px 5px black, 0 0 12px black;
+    margin: 0;
+}
+
+.table {
+    background-color: c.$fontcolor;
+    margin: 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    background-color: c.$fontcolor;
+}
+
+.header .row {
+    padding: 10px;
+    background-color: c.$background;
+    font-size: calc(c.$letratabla + 15px);
+}
+
+.header .row div {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: c.$fontcolor;
+}
+
+.body .row div {
+    display: flex;
+    justify-content: center;
+    font-size: c.$letratabla;
+}

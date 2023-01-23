@@ -1,0 +1,70 @@
+@use 'commons' as c;
+
+.ratio {
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.contacto {
+    box-sizing: border-box;
+    color: c.$fontcolor;
+    font-family: c.$font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create {
+    width: 100%;
+    max-width: 550px;
+    min-width: 320px;
+    border-radius: 15px;
+    background-color: c.$background;
+    padding: 0px;
+    margin: 0 auto;
+    border: 1px solid rgb(0, 0, 0, 0.4);
+}
+
+.content {
+    width: 65%;
+    margin: 0 auto;
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        margin: 0px;
+        padding: 20px 0px 0px 0px;
+    }
+}
+
+.form {
+    margin-top: 2rem;
+    label {
+        font-size: 14px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.3rem;
+        margin-top: 0px;
+    }
+    input {
+        display: block;
+        border: none;
+        width: 100%;
+    }
+    input:not([type="submit"]) {
+        background-color: c.$fontcolor;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        color: rgb(0, 0, 0);
+    }
+    input[type="submit"] {
+        border-radius: 5px;
+        background-color: #0076fd;
+        color: c.$fontcolor;
+        font-weight: bold;
+        padding: 1.5rem 3rem;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+}

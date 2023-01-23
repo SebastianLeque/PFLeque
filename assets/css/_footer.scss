@@ -1,0 +1,10 @@
+@use 'commons' as c;
+
+footer {
+    height: 50px;
+    background: c.$background;
+    font-family: c.$font;
+    text-align: center;
+    color: c.$fontcolor;
+    padding-top: 15px;
+}

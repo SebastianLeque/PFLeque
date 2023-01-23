@@ -1,0 +1,46 @@
+@use 'commons' as c;
+
+section {
+    min-height: 90vh;
+    margin: 0 auto;
+    background: {
+        image: url(../../assets/img/section.jpg);
+        size: cover;
+        position: center;
+        attachment: fixed;
+    }
+    p {
+        color: c.$fontcolor;
+        padding: 40px;
+        font-family: c.$font;
+        text-shadow: 1px 2px 2px black, 3px 3px 5px black;
+    }
+}
+
+h4 {
+    color: c.$fontcolor;
+    padding-left: 40px;
+    font-family: c.$font;
+    text-shadow: 1px 2px 2px black, 3px 3px 5px black;
+}
+
+img {
+    width: 100px;
+    margin-left: 25px;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+    .presentacion {
+        padding-top: 280px;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+    }
+}

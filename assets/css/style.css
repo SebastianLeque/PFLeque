@@ -1,0 +1,248 @@
+section {
+    min-height: 90vh;
+    margin: 0 auto;
+    background-image: url(../../assets/img/section.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section p {
+    color: aliceblue;
+    padding: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-shadow: 1px 2px 2px black, 3px 3px 5px black;
+}
+
+h4 {
+    color: aliceblue;
+    padding-left: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-shadow: 1px 2px 2px black, 3px 3px 5px black;
+}
+
+img {
+    width: 100px;
+    margin-left: 25px;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+    .presentacion {
+        padding-top: 280px;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+    }
+}
+
+.columnas img {
+    width: 100%;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.columnas img:hover {
+    transform: scale(1.02);
+    transform-origin: center center;
+}
+
+.filas {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.columnas {
+    flex: 25%;
+    padding: 5px;
+}
+
+@media (max-width: 766px) {
+    .columnas {
+        flex: 100%;
+    }
+}
+
+.videos {
+    text-align: center;
+    padding-top: 2px;
+}
+
+.historia {
+    color: aliceblue;
+    padding: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-shadow: 1px 1px 5px black, 3px 3px 5px black, 0 0 12px black;
+    margin: 0;
+}
+
+.table {
+    background-color: aliceblue;
+    margin: 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.header .row {
+    padding: 10px;
+    background-color: #69b6d4;
+    font-size: 28px;
+}
+
+.header .row div {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.body .row div {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.ratio {
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.contacto {
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create {
+    width: 100%;
+    max-width: 550px;
+    min-width: 320px;
+    border-radius: 15px;
+    background-color: #69b6d4;
+    padding: 0px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0px;
+    padding: 20px 0px 0px 0px;
+}
+
+.form {
+    margin-top: 2rem;
+}
+
+.form label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3rem;
+    margin-top: 0px;
+}
+
+.form input {
+    display: block;
+    border: none;
+    width: 100%;
+}
+
+.form input:not([type=submit]) {
+    background-color: aliceblue;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.form input[type=submit] {
+    border-radius: 5px;
+    background-color: #0076fd;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+footer {
+    height: 50px;
+    background: #69b6d4;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 15px;
+}
+
+.navbar-brand {
+    position: relative;
+    -webkit-animation-name: navbar;
+    animation-name: navbar;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+
+@-webkit-keyframes navbar {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 50px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes navbar {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 50px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+nav {
+    background-color: #69b6d4;
+}
+
+/*# sourceMappingURL=style.css.map */
